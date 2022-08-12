@@ -1,14 +1,9 @@
-import React, { 
-	useState 
-} from "react";
+import React from "react";
 
-const Select = ({ onSearch }) => {
-
-	const [searchGender, setSearchGender] = useState("");
+const Select = ({ searchGender, setSearchGender }) => {
 
 	const onSelectChange = value => {
 		setSearchGender(value);
-		onSearch(value, "Gender");
 	};
 
 	return (

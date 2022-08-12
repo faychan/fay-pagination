@@ -1,15 +1,11 @@
-import React, { 
-	useState 
-} from "react";
+import React from "react";
 
-const Search = ({ onSearch }) => {
-
-	const [search, setSearch] = useState("");
+const Search = ({ search, setSearch }) => {
 
 	const onInputChange = value => {
 		setSearch(value);
-		onSearch(value);
 	};
+
 	return (
 		<input
 			type="text"

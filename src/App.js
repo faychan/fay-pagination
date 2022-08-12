@@ -85,14 +85,12 @@ const App = () => {
 			<div className="row my-4 mx-3 ">
 				<div className="col-auto d-flex flex-row gap-2">
 					<Search
-						onSearch={value => {
-							setSearch(value);
-						}}
+						search={search}
+						setSearch={setSearch}
 					/>
 					<Select
-						onSearch={ value => {
-							setSearchGender(value);
-						}}
+						searchGender={searchGender}
+						setSearchGender={setSearchGender}
 					/>
 					<Button 
 						variant="primary"
